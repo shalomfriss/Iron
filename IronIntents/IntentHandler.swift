@@ -18,7 +18,11 @@ class IntentHandler: INExtension {
         os_log("Handling intent=%@", log: .intents, type: .info, intent)
         
         if intent is ViewPersonalRecordsIntent {
-            return ViewPersonalRecordsIntentHandler()
+            if #available(iOSApplicationExtension 14.0, *) {
+                return ViewPersonalRecordsIntentHandler()
+            } else {
+                // Fallback on earlier versions
+            }
         } else if intent is ViewOneRepMaxIntent {
             return ViewOneRepMaxIntentHandler()
         } else if intent is INStartWorkoutIntent {

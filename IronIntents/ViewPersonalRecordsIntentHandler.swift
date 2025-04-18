@@ -9,8 +9,15 @@
 import Foundation
 import CoreData
 import WorkoutDataKit
+import Intents
 
+@available(iOSApplicationExtension 14.0, *)
 class ViewPersonalRecordsIntentHandler: NSObject, ViewPersonalRecordsIntentHandling {
+    @objc func provideExerciseOptionsCollection(for intent: ViewPersonalRecordsIntent,
+                                          with completion: @escaping (INObjectCollection<IntentExercise>?, (any Error)?) -> Void) {
+        
+    }
+    
     func handle(intent: ViewPersonalRecordsIntent, completion: @escaping (ViewPersonalRecordsIntentResponse) -> Void) {
         guard let intentExercise = intent.exercise,
             let exercise = ExerciseStore.shared.find(intentExercise: intentExercise) else {

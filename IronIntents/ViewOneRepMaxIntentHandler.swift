@@ -12,6 +12,12 @@ import CoreData
 import WorkoutDataKit
 
 class ViewOneRepMaxIntentHandler: NSObject, ViewOneRepMaxIntentHandling {
+    @available(iOSApplicationExtension 14.0, *)
+    func provideExerciseOptionsCollection(for intent: ViewOneRepMaxIntent, with completion: @escaping (INObjectCollection<IntentExercise>?, (any Error)?) -> Void) {
+        
+    }
+    
+    
     func handle(intent: ViewOneRepMaxIntent, completion: @escaping (ViewOneRepMaxIntentResponse) -> Void) {
         guard let intentExercise = intent.exercise,
             let exercise = ExerciseStore.shared.find(intentExercise: intentExercise) else {

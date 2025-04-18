@@ -2616,7 +2616,7 @@
 				IBSC_MODULE = WatchIron_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = Iron;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.kabouzeid.Iron;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.shalomfriss.Iron;
 				MARKETING_VERSION = 1.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -2644,7 +2644,7 @@
 				IBSC_MODULE = WatchIron_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = Iron;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.kabouzeid.Iron;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.shalomfriss.Iron;
 				MARKETING_VERSION = 1.6;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shalomfriss.Iron.watchkitapp;

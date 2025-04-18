@@ -5,15 +5,15 @@
 	<key>INEnums</key>
 	<array/>
 	<key>INIntentDefinitionModelVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>INIntentDefinitionNamespace</key>
 	<string>hRgkE9</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>19E266</string>
+	<string>24A335</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>11E146</string>
+	<string>16C5032a</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>11.4</string>
+	<string>16.2</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -64,6 +64,8 @@
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
@@ -95,14 +97,6 @@
 							<string>vM9O9c</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>DisambiguationIntroduction</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Which one?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>UCGRIC</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>DisambiguationSelection</string>
 						</dict>
 						<dict>
 							<key>INIntentParameterPromptDialogCustom</key>
@@ -259,6 +253,8 @@
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
@@ -290,14 +286,6 @@
 							<string>JhZm0Q</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>DisambiguationIntroduction</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>Which one?</string>
-							<key>INIntentParameterPromptDialogFormatStringID</key>
-							<string>z0EaBP</string>
-							<key>INIntentParameterPromptDialogType</key>
-							<string>DisambiguationSelection</string>
 						</dict>
 						<dict>
 							<key>INIntentParameterPromptDialogCustom</key>
@@ -464,6 +452,8 @@
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterDisplayName</key>
 					<string>Workout</string>
 					<key>INIntentParameterDisplayNameID</key>
@@ -485,6 +475,8 @@
 					<string>SpeakableString</string>
 				</dict>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterDisplayName</key>
 					<string>Goal</string>
 					<key>INIntentParameterDisplayNameID</key>
@@ -519,6 +511,8 @@
 					<string>Decimal</string>
 				</dict>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
@@ -541,6 +535,8 @@
 					<string>Integer</string>
 				</dict>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterCustomDisambiguation</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
@@ -563,6 +559,8 @@
 					<string>Integer</string>
 				</dict>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterDisplayName</key>
 					<string>Open Ended</string>
 					<key>INIntentParameterDisplayNameID</key>
@@ -633,6 +631,8 @@
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterDisplayName</key>
 					<string>Workout</string>
 					<key>INIntentParameterDisplayNameID</key>
@@ -699,6 +699,8 @@
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
 					<key>INIntentParameterDisplayName</key>
 					<string>Workout</string>
 					<key>INIntentParameterDisplayNameID</key>
