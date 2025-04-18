@@ -7,27 +7,28 @@
 //
 
 import SwiftUI
-import Charts
+import DGCharts
 
 struct ChartsLineChartViewRepresentable : UIViewRepresentable {
     let chartData: ChartData
     let xAxisValueFormatter: AxisValueFormatter?
     let yAxisValueFormatter: AxisValueFormatter?
     let balloonValueFormatter: BalloonValueFormatter?
-    var preCustomization: ((Charts.LineChartView, ChartData) -> ())?
-    var postCustomization: ((Charts.LineChartView) -> ())?
+    var preCustomization: ((DGCharts.LineChartView, ChartData) -> ())?
+    var postCustomization: ((DGCharts.LineChartView) -> ())?
 
     func makeUIView(context: UIViewRepresentableContext<ChartsLineChartViewRepresentable>) -> StyledLineChartView {
-        StyledLineChartView()
+        //TODO
+        StyledLineChartView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
     }
     
     func updateUIView(_ uiView: StyledLineChartView, context: UIViewRepresentableContext<ChartsLineChartViewRepresentable>) {
-        uiView.xAxis.valueFormatter = xAxisValueFormatter
-        uiView.leftAxis.valueFormatter = yAxisValueFormatter
-        uiView.balloonMarker.valueFormatter = balloonValueFormatter
-        preCustomization?(uiView, chartData)
-        uiView.data = chartData
-        uiView.fitScreen()
-        postCustomization?(uiView)
+//        uiView.xAxis.valueFormatter = xAxisValueFormatter
+//        uiView.leftAxis.valueFormatter = yAxisValueFormatter
+//        uiView.balloonMarker.valueFormatter = balloonValueFormatter
+//        preCustomization?(uiView, chartData)
+//        uiView.data = chartData
+//        uiView.fitScreen()
+//        postCustomization?(uiView)
     }
 }

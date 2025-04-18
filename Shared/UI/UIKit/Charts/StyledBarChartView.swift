@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import Charts
+import DGCharts
 
-class StyledBarChartView: Charts.BarChartView {
+class StyledBarChartView: DGCharts.BarChartView {
     var autoStyleData: Bool = true
 
     override func layoutMarginsDidChange() {
@@ -31,7 +31,7 @@ class StyledBarChartView: Charts.BarChartView {
     }
     
     private func setup() {
-        setupStyle()
+//        setupStyle()
     }
 
     override var data: ChartData? {
@@ -43,7 +43,7 @@ class StyledBarChartView: Charts.BarChartView {
             guard let newValue = newValue else { super.data = nil; return }
             if autoStyleData {
                 for dataSet in newValue.dataSets {
-                    BarLineChartViewBase.styleChartDataSet(chartDataSet: dataSet as! BarChartDataSet, color: self.tintColor, fillEnabled: true)
+//                    BarLineChartViewBase.styleChartDataSet(chartDataSet: dataSet as! BarChartDataSet, color: self.tintColor, fillEnabled: true)
                 }
             }
             let hasData = newValue.dataSets.reduce(into: false, { (notEmpty, dataSet) in

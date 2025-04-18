@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44347EEC2DB29F2C00D07566 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 44347EEB2DB29F2C00D07566 /* DGCharts */; };
+		44347EEE2DB29F3F00D07566 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 44347EED2DB29F3F00D07566 /* DGCharts */; };
+		44347EF02DB29F4C00D07566 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 44347EEF2DB29F4C00D07566 /* DGCharts */; };
 		8A0683AE239C5B53001F0A1E /* WorkoutDataStorage+shared2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF07874239B246600CA95D6 /* WorkoutDataStorage+shared2.swift */; };
 		8A0683AF239C5B6F001F0A1E /* WorkoutDataStorage+GroupStoreURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0785F239AF57A00CA95D6 /* WorkoutDataStorage+GroupStoreURL.swift */; };
 		8A0683B0239C5B83001F0A1E /* FileManager+GroupContainerURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0785D239AF53500CA95D6 /* FileManager+GroupContainerURL.swift */; };
@@ -74,9 +77,6 @@
 		8A3C5F99218E3F4F00467DA6 /* UserDefaults+PinnedCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C5F98218E3F4F00467DA6 /* UserDefaults+PinnedCharts.swift */; };
 		8A4C129A23A2A5DA0026BD4E /* IntentWorkoutSet+WorkoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C129923A2A5DA0026BD4E /* IntentWorkoutSet+WorkoutSet.swift */; };
 		8A4D3B7223858F6F007A3792 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4D3B7123858F6F007A3792 /* NotificationManager.swift */; };
-		8A50F127243F5253003B3A6E /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 8A50F126243F5253003B3A6E /* Charts */; };
-		8A50F129243F525D003B3A6E /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 8A50F128243F525D003B3A6E /* Charts */; };
-		8A50F12B243F5262003B3A6E /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 8A50F12A243F5262003B3A6E /* Charts */; };
 		8A51E493239D45B200336296 /* ViewOneRepMaxIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51E492239D45B200336296 /* ViewOneRepMaxIntentHandler.swift */; };
 		8A56A47F22D7C93B0076E99A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56A47E22D7C93B0076E99A /* SettingsView.swift */; };
 		8A56A48122D7CDC60076E99A /* UserDefaults+Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56A48022D7CDC60076E99A /* UserDefaults+Settings.swift */; };
@@ -761,7 +761,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A0683B7239C77B4001F0A1E /* WorkoutDataKit.framework in Frameworks */,
-				8A50F129243F525D003B3A6E /* Charts in Frameworks */,
+				44347EEC2DB29F2C00D07566 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +770,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A60438D239C4DBB00CFB7C0 /* IntentsUI.framework in Frameworks */,
-				8A50F12B243F5262003B3A6E /* Charts in Frameworks */,
+				44347EF02DB29F4C00D07566 /* DGCharts in Frameworks */,
 				8A0683BC239C77BB001F0A1E /* WorkoutDataKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,9 +779,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44347EEE2DB29F3F00D07566 /* DGCharts in Frameworks */,
 				8AB0C94D23453F080009F031 /* HealthKit.framework in Frameworks */,
 				8AB5211523992ABC008064B2 /* WorkoutDataKit.framework in Frameworks */,
-				8A50F127243F5253003B3A6E /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1548,7 +1548,7 @@
 			);
 			name = IronIntents;
 			packageProductDependencies = (
-				8A50F128243F525D003B3A6E /* Charts */,
+				44347EEB2DB29F2C00D07566 /* DGCharts */,
 			);
 			productName = IronIntents;
 			productReference = 8A604382239C4DBB00CFB7C0 /* IronIntents.appex */;
@@ -1570,7 +1570,7 @@
 			);
 			name = IronIntentsUI;
 			packageProductDependencies = (
-				8A50F12A243F5262003B3A6E /* Charts */,
+				44347EEF2DB29F4C00D07566 /* DGCharts */,
 			);
 			productName = IronIntentsUI;
 			productReference = 8A60438B239C4DBB00CFB7C0 /* IronIntentsUI.appex */;
@@ -1598,7 +1598,7 @@
 			);
 			name = Iron;
 			packageProductDependencies = (
-				8A50F126243F5253003B3A6E /* Charts */,
+				44347EED2DB29F3F00D07566 /* DGCharts */,
 			);
 			productName = "Rhino Fit";
 			productReference = 8A7D6E94200BF92E00AA0FA7 /* Iron.app */;
@@ -2942,27 +2942,27 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 4.1.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8A50F126243F5253003B3A6E /* Charts */ = {
+		44347EEB2DB29F2C00D07566 /* DGCharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8A50F125243F5253003B3A6E /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = Charts;
+			productName = DGCharts;
 		};
-		8A50F128243F525D003B3A6E /* Charts */ = {
+		44347EED2DB29F3F00D07566 /* DGCharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8A50F125243F5253003B3A6E /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = Charts;
+			productName = DGCharts;
 		};
-		8A50F12A243F5262003B3A6E /* Charts */ = {
+		44347EEF2DB29F4C00D07566 /* DGCharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8A50F125243F5253003B3A6E /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = Charts;
+			productName = DGCharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 

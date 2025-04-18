@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import Charts
+import DGCharts
 
-class StyledLineChartView: Charts.LineChartView {
+class StyledLineChartView: DGCharts.LineChartView {
     private(set) var balloonMarker: BalloonMarker!
     var autoStyleData: Bool = true
 
@@ -33,7 +33,7 @@ class StyledLineChartView: Charts.LineChartView {
 
     private func setup() {
         balloonMarker = BalloonMarker(chartView: self)
-        self.marker = balloonMarker
+        self.marker = balloonMarker as? Marker
         setupStyle()
     }
 
